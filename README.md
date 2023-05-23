@@ -94,12 +94,10 @@ sudo ./start-all.sh</td>
     <th colspan="2" align="center"><b>Jelasakan masing-masing maksud kode berikut sesuai nomor kodenya!</b></th>
  </tr>
  <tr>
-    <td><b style="font-size:30px">Nomor Kode</b></td>
     <td><b style="font-size:30px">Kode</b></td>
     <td><b style="font-size:30px">Keterangan</b></td>
  </tr>
  <tr>
-    <td rowspan="8">1</td>
     <td>sys.argv</td>
     <td>sys.argv adalah list pada python yang berisi semua perintah pada command-line</td>
  </tr>
@@ -131,7 +129,6 @@ sudo ./start-all.sh</td>
     <td>Menunggu penghentian kueri ini, baik dengan kueri. stop() atau dengan pengecualian. Jika kueri telah diakhiri dengan pengecualian, maka pengecualian akan dilemparkan.</td>
  </tr>
  <tr>
-    <td rowspan="2">2</td>
     <td>nc</td>
     <td>Utilitas nc (atau netcat) digunakan untuk apa saja di bawah matahari yang melibatkan TCP atau UDP. Itu dapat membuka koneksi TCP, mengirim paket UDP, mendengarkan port TCP dan UDP yang sewenang-wenang, melakukan pemindaian port, dan menangani IPv4 dan IPv6</td>
  </tr>
@@ -141,7 +138,6 @@ sudo ./start-all.sh</td>
     <tr>
  </tr>
  <tr>
-    <td rowspan="3">3</td>
     <td>spark-submit</td>
     <td>Skrip spark-submit di direktori bin Spark digunakan untuk meluncurkan aplikasi di cluster</td>
  </tr>
@@ -156,7 +152,6 @@ sudo ./start-all.sh</td>
     <tr>
  </tr>
  <tr>
-    <td rowspan="4">4</td>
     <td>ssc.checkpoint</td>
     <td>Mengatur direktori pos pemeriksaan</td>
  </tr>
@@ -176,7 +171,6 @@ sudo ./start-all.sh</td>
     <tr>
  </tr>
  <tr>
-    <td rowspan="3">3</td>
     <td>rdd.take(5)</td>
     <td>Ambil 5 elemen pertama dari RDD</td>
  </tr>

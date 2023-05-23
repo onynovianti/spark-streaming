@@ -32,8 +32,8 @@ sudo ./start-all.sh</td>
     <td><b style="font-size:30px">Output</b></td>
  </tr>
  <tr>
-    <td>https://github.com/onynovianti/spark-sql-big-data/blob/5be0ff9c4407c5e78a1dd301b06aed51cd4b7518/01_dataframes.py#L1-L4</td>
-    <td><img src="https://github.com/onynovianti/spark-sql-big-data/blob/master/00_images/kode%201.png"></td>
+    <td>https://github.com/onynovianti/spark-streaming/blob/7098a02a7be2a4dcde39fa373f21832e53cf1026/network_wordcount.py#L28-L49</td>
+    <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/method1.png"></td>
  </tr>
 </table><br>
 
@@ -46,20 +46,8 @@ sudo ./start-all.sh</td>
     <td><b style="font-size:30px">Output</b></td>
  </tr>
  <tr>
-    <td>https://github.com/onynovianti/spark-sql-big-data/blob/5be0ff9c4407c5e78a1dd301b06aed51cd4b7518/01_dataframes.py#L6-L7</td>
-    <td><img src="https://github.com/onynovianti/spark-sql-big-data/blob/master/00_images/kode%202.png"></td>
- </tr>
- <tr>
-    <td><b style="font-size:30px">Kode</b></td>
-    <td><b style="font-size:30px">Keterangan</b></td>
- </tr>
- <tr>
-    <td>spark</td>
-    <td>Merujuk pada builder spark dengan SparkSession</td>
- </tr>
- <tr>
-    <td>createDataFrame</td>
-    <td>Membuat data frame manual dan mengambil objek RDD sebagai argumennya</td>
+    <td>https://github.com/onynovianti/spark-streaming/blob/7098a02a7be2a4dcde39fa373f21832e53cf1026/network_wordcount_ganti_interval.py#L28-L49</td>
+    <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/method2.png"></td>
  </tr>
 </table><br>
 
@@ -73,7 +61,7 @@ sudo ./start-all.sh</td>
  </tr>
  <tr>
     <td>https://github.com/onynovianti/spark-sql-big-data/blob/5be0ff9c4407c5e78a1dd301b06aed51cd4b7518/01_dataframes.py#L9-L10</td>
-    <td><img src="https://github.com/onynovianti/spark-sql-big-data/blob/master/00_images/kode%203.png"></td>
+    <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/stateful.png"></td>
  </tr>
  <tr>
     <td><b style="font-size:30px">Kode</b></td>

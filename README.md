@@ -65,8 +65,8 @@ sudo ./start-all.sh</td>
  </tr>
 </table><br>
 
-**2. Melakukan Transformasi di Spark Streaming**
-<table border="0">
+**2. Melakukan Transformasi di Spark Streaming (Error)**
+<!-- <table border="0">
  <tr>
     <th colspan="2" align="center"><b>Metode 1 : Mode Stateless Stream Processing</b></th>
  </tr>
@@ -78,7 +78,8 @@ sudo ./start-all.sh</td>
     <td>https://github.com/onynovianti/spark-streaming/blob/7098a02a7be2a4dcde39fa373f21832e53cf1026/network_wordcount.py#L28-L49</td>
     <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/method1.png"></td>
  </tr>
-</table><br>
+</table> -->
+<br>
 
 **3. TUGAS PRAKTIKUM**
 <table border="0">

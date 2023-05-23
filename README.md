@@ -60,7 +60,7 @@ sudo ./start-all.sh</td>
     <td><b style="font-size:30px">Output</b></td>
  </tr>
  <tr>
-    <td>https://github.com/onynovianti/spark-streaming/blob/122b3d465ea4c65ab352b0d5ea2d6d694d162b41/stateful_network_wordcount.py#L121</td>
+    <td>https://github.com/onynovianti/spark-streaming/blob/be7fa7a73e1dde001da1712c1b82d76c58c9a7af/stateful_network_wordcount.py#L63-L121</td>
     <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/stateful.png"></td>
  </tr>
 </table><br>

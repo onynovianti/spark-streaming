@@ -21,25 +21,25 @@ if __name__ == "__main__":
     ssc = StreamingContext(sc, 5)
 
     # Read in the word-sentiment list and create a static RDD from it
-    word_sentiments_file_path = "data/streaming/AFINN-111.txt"
+    word_sentiments_file_path = "AFINN-111.txt"
     word_sentiments = ssc.sparkContext.textFile(word_sentiments_file_path) \
         .map(lambda line: tuple(line.split("\t")))
 
     lines = ssc.socketTextStream(sys.argv[1], int(sys.argv[2]))
 
-word_counts = lines.flatMap(lambda line: line.split(" ")) \
+    word_counts = lines.flatMap(lambda line: line.split(" ")) \
         .map(lambda word: (word, 1)) \
         .reduceByKey(lambda a, b: a + b)
 
-# Determine the words with the highest sentiment values by joining the streaming RDD
-# with the static RDD inside the transform() method and then multiplying
-# the frequency of the words by its sentiment value
-happiest_words = word_counts.transform(lambda rdd: word_sentiments.join(rdd)) \
-    .map(lambda (word, tuple): (word, float(tuple[0]) * tuple[1])) \
-    .map(lambda (word, happiness): (happiness, word)) \
-    .transform(lambda rdd: rdd.sortByKey(False))
+    # Determine the words with the highest sentiment values by joining the streaming RDD
+    # with the static RDD inside the transform() method and then multiplying
+    # the frequency of the words by its sentiment value
+    happiest_words = word_counts.transform(lambda rdd: word_sentiments.join(rdd)) \
+        .map(lambda (word, tuple): (word, float(tuple[0]) * tuple[1])) \
+        .map(lambda (word, happiness): (happiness, word)) \
+        .transform(lambda rdd: rdd.sortByKey(False))
 
-happiest_words.foreachRDD(print_happiest_words)
+    happiest_words.foreachRDD(print_happiest_words)
 
-ssc.start()
-ssc.awaitTermination()
+    ssc.start()
+    ssc.awaitTermination()

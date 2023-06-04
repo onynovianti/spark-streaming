@@ -65,20 +65,35 @@ sudo ./start-all.sh</td>
  </tr>
 </table><br>
 
-**2. Melakukan Transformasi di Spark Streaming (Error)**
-<!-- <table border="0">
+**2. Melakukan Transformasi di Spark Streaming**
+<table border="0">
  <tr>
-    <th colspan="2" align="center"><b>Metode 1 : Mode Stateless Stream Processing</b></th>
+    <th colspan="2" align="center"><b>0. Copy file AFINN-111.txt dari folder download (windows) ke hadoop (cloudera)</b></th>
  </tr>
  <tr>
     <td><b style="font-size:30px">Code</b></td>
     <td><b style="font-size:30px">Output</b></td>
  </tr>
  <tr>
-    <td>https://github.com/onynovianti/spark-streaming/blob/7098a02a7be2a4dcde39fa373f21832e53cf1026/network_wordcount.py#L28-L49</td>
-    <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/method1.png"></td>
+    <td>hadoop fs -put /home/cloudera/Downloads/AFINN-111.txt AFINN-111.txt </td>
+    <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/copy%20afiin.png"> <br>
+    <img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/copy%20af.png"></td>
  </tr>
-</table> -->
+</table>
+<br>
+<table border="0">
+ <tr>
+    <th colspan="2" align="center"><b>Deteksi Sentiment</b></th>
+ </tr>
+ <tr>
+    <td><b style="font-size:30px">Code</b></td>
+    <td><b style="font-size:30px">Output</b></td>
+ </tr>
+ <tr>
+    <td>https://github.com/onynovianti/spark-streaming/blob/3e88c6ec2cd5d0dc79baee53f76880ba932c8102/sentiment.py#L1-L45</td>
+    <td><img src="https://github.com/onynovianti/spark-streaming/blob/master/00_images/sentiment.png"></td>
+ </tr>
+</table>
 <br>
 
 **3. TUGAS PRAKTIKUM**
